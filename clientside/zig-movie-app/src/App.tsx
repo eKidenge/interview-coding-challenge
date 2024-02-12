@@ -1,22 +1,21 @@
-import React, { Component } from 'react';
-import './App.css';
-import Description from './Description';
-import Header from './Header';
-import logo from './logo.svg';
+// ./clientside/zig-movie-app/src/App.tsx
 
-class App extends React.Component {
-  public render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <Header name="CODER" />
-        </header>
-        <Description countBy={3} />
-      </div>
-    );
-  }
-}
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import SearchBar from './components/SearchBar';
+import MovieDetailPage from './components/MovieDetailPage';
 
+const App: React.FC = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/search" element={<SearchBar onSearch={() => {}} />} />
+        <Route path="/movie/:movieId" element={<MovieDetailPage />} />
+      </Routes>
+    </Router>
+  );
+};
 
 export default App;
