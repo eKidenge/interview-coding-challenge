@@ -1,4 +1,4 @@
-                                                                                                ZIG MOVIE APP
+ZIG MOVIE APP
 
 Project Overview:
 
