@@ -2,7 +2,7 @@ ZIG MOVIE APP
 
 Project Overview:
 
-Objective: The goal of the Zig Movie App project is to create a web application that fetches and displays information about popular movies using The Movie Database (TMDb) API.
+Objective: The goal of the Zig Movie App project was to create a web application that fetches and displays information about popular movies using The Movie Database (TMDb) API.
 
 Tech Stack:
 
